@@ -1,0 +1,62 @@
+<h1>Workout List</h1>
+<fieldset>
+	<label for="name">Workout Name:</label>
+	<input id="name" type="text" name="name"></input>
+	
+	<label for="reps">Number of Repetitions:</label>
+	<input id="reps" type="number" name="reps"></input>
+	
+	<label for="weight">Weight:</label>
+	<input id="weight" type="number" name="weight"></input>
+	
+	<label for="date">Date:</label>
+	<input id="date1" type="date" name="date1"></input>
+	
+	<label for="unit">Weight Unit: </label>
+	<label><input type="radio" name="unit" id="unit0" value="0">kilograms</label>
+	<label><input type="radio" name="unit" id="unit1" value="1">pounds</label>
+	
+	<input id="add" type="submit" name="sendData"></input>
+</fieldset>
+
+<fieldset id='updateExercise'>
+<h3>Update Activity</h3>
+
+	<input type="hidden" id="upId">
+
+	<label for="upName">Name:</label>
+	<input id="upName" type="text" name="upName"></input>
+
+	<label for="upReps">Number of Repetitions:</label>
+	<input id="upReps" type="number" name="upReps"></input>
+	
+	<label for="upWeight">Weight:</label>
+	<input id="upWeight" type="number" name="upWeight"></input>
+	
+	<label for="upDate">Date:</label>
+	<input id="upDate" type="date" name="upDate"></input>
+	
+	<label for="unit">Weight Unit: </label>
+	<label><input type="radio" name="unit" id="upUnit0" value="0">kilograms</label>
+	<label><input type="radio" name="unit" id="upUnit1" value="1">pounds</label>
+
+	<button type=button id="upData">Submit</button>
+	<button type=button id="upClose">Close Form</button>
+
+</fieldset>
+
+<table id='exerciseTable'>
+ <thead>
+  <tr>
+   <th>Name</th>
+   <th>Reps</th>
+   <th>Weight</th>
+   <th>Units</th>
+   <th>Date</th>
+  </tr>
+ </thead>
+ <tbody id='dataBody'>
+ </tbody>
+
+</table>
+<script src="/source.js"></script>
